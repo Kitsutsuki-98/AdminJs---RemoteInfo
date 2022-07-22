@@ -64,12 +64,13 @@ export const generateAdminJSConfig = () => ({
   },
   rootPath: '/admin',
   branding: {
-    companyName: 'Remote info Demo page',
+    madeWithLove: false,
+    companyName: 'Remote Info, pagina di demo',
     theme,
   },
   version: {
     admin: true,
-    app: '2.0.0',
+    app: '0.0.1 - pre-alpha',
   },
   resources: [
     // custom

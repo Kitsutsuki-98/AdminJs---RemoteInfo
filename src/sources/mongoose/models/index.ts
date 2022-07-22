@@ -5,3 +5,6 @@ export { CategoryModel } from './category.model';
 export { CommentModel } from './comment.model';
 export { ComplicatedModel } from './complicated.model';
 export { ComputerModel } from './computer.model';
+
+
+// i modelli vengono tutti esportati da qua.

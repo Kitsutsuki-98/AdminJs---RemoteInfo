@@ -12,7 +12,7 @@ export const CreateComputerResource = (): CreateResourceResult<typeof ComputerMo
                 isTitle: false,
             },
             Hostname: {
-                type: 'richtext',
+                type: 'string',
             },
         },
     },

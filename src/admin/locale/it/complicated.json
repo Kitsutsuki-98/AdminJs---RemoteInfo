@@ -1,0 +1,7 @@
+{
+  "properties": {
+    "nestedDetails.age": "Eta della persona",
+    "nestedDetails.height": "Altezza della persona",
+    "nestedDetails.nested.extremelyNested": "Wow che nesting"
+  }
+}

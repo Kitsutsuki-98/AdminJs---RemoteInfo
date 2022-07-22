@@ -1,1 +1,1 @@
-console.log('Welcome to AdminJS')
+console.log('Benvenuto to AdminJS')

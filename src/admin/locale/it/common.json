@@ -1,0 +1,14 @@
+{
+  "messages": {
+    "loginWelcome": "Benvenuto su RemoteInfo, App basata su AdminJS, scritta con react",
+    "Has to be filled": "Deve essere riempito"
+  },
+  "labels": {
+    "ID": "ID",
+    "Name": "Nome Prodotto",
+    "Quantity": "Numero Prodotti",
+    "Unit price": "Prezzo",
+    "Sum": "Somma",
+    "loginWelcome": "Benvenuto!"
+  }
+}

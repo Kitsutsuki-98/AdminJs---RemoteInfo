@@ -1,0 +1,11 @@
+{
+  "actions": {
+    "dontTouchThis": "Non toccare questo"
+  },
+  "properties": {
+    "organizationId": "Organizzazione"
+  },
+  "messages": {
+    "youCanSetupGuards": "Puoi impostare le guardie qui"
+  }
+}
