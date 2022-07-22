@@ -9,7 +9,7 @@ const ModalExample: FC = () => {
     variant: 'primary',
     label: 'Modal header',
     icon: 'CollapseAll',
-    title: 'Modal title',
+    title: 'Titolo del cazzo',
     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     buttons: [{ label: 'Cancel' }, { label: 'Delete', variant: 'danger' }],
     onClose: () => setShowModal(false),

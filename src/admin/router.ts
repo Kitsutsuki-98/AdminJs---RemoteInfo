@@ -1,8 +1,7 @@
 import AdminJSExpress from '@adminjs/express';
-import AdminJSFastify from '@adminjs/fastify';
+//import AdminJSFastify from '@adminjs/fastify';
 import AdminJS from 'adminjs';
 import argon2 from 'argon2';
-import { FastifyInstance } from 'fastify';
 import ConnectPgSimple from 'connect-pg-simple';
 import session from 'express-session';
 
@@ -49,7 +48,7 @@ export const expressAuthenticatedRouter = (adminJs: AdminJS) => {
     }
   );
 };
-
+/*
 export const fastifyAuthenticatedRouter = (adminJs: AdminJS, app: FastifyInstance) =>
   AdminJSFastify.buildAuthenticatedRouter(
     adminJs,
@@ -59,3 +58,4 @@ export const fastifyAuthenticatedRouter = (adminJs: AdminJS, app: FastifyInstanc
     },
     app
   );
+*/

@@ -5,8 +5,8 @@ import cors from 'cors';
 import AdminJS from 'adminjs';
 import { createAdmin, generateAdminJSConfig } from '../admin';
 import { expressAuthenticatedRouter } from '../admin/router';
-import { init } from '../sources/mikroorm/config';
-import dataSource from '../sources/typeorm/config';
+//import { init } from '../sources/mikroorm/config';
+//import dataSource from '../sources/typeorm/config';
 
 const attachAdminJS = async (app: Express) => {
   const config = generateAdminJSConfig();
@@ -26,13 +26,13 @@ const start = async () => {
   app.use(cors({ credentials: true, origin: true }));
 
   await mongoose.connect(process.env.MONGO_DATABASE_URL);
-  await init();
-  await dataSource.initialize();
+ // await init();
+ // await dataSource.initialize();
 
   await attachAdminJS(app);
 
   app.listen(process.env.PORT, async () => {
-    console.log(`AdminJS is under localhost:${process.env.PORT}/admin`);
+    console.log(`AdminJS is under http://localhost:${process.env.PORT}/admin`);
   });
 };
 
