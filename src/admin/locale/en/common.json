@@ -1,4 +1,6 @@
 {
+  "branding":{
+  "madeWithLove": false},
   "messages": {
     "loginWelcome": "to the demo application made with AdminJS - the best admin framework for Node.js apps, based on React.",
     "Has to be filled": "Has to be filled"

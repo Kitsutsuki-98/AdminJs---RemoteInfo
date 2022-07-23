@@ -4,7 +4,7 @@ form[action="/admin/login"] > h5::after {
   color: royalblue;
   font-family: 'Roboto', Georgia;
   box-sizing: border-box;
-  content: 'Login: admin@example.com | Password: password';
+  content: 'Richiedi le crendenziali al team di assistenza';
   padding: 8px;
   margin: 14px 0;
   font-size: 0.8rem;

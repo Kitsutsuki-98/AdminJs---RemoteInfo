@@ -63,9 +63,9 @@ export const generateAdminJSConfig = () => ({
   },
   rootPath: '/admin',
   branding: {
-    madeWithLove: false,
     companyName: 'Remote Info, pagina di demo',
     theme,
+    withMadeWithLove: false,
   },
   version: {
     admin: true,
