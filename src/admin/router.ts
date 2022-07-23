@@ -2,8 +2,8 @@ import AdminJSExpress from '@adminjs/express';
 //import AdminJSFastify from '@adminjs/fastify';
 import AdminJS from 'adminjs';
 import argon2 from 'argon2';
-import ConnectPgSimple from 'connect-pg-simple';
-import session from 'express-session';
+//import ConnectPgSimple from 'connect-pg-simple';
+//import session from 'express-session';
 
 import { AdminModel } from '../sources/mongoose/models';
 
@@ -16,17 +16,17 @@ export const authenticateUser = async (email, password) => {
 };
 
 export const expressAuthenticatedRouter = (adminJs: AdminJS) => {
-  const ConnectSession = ConnectPgSimple(session);
-
-  const sessionStore = new ConnectSession({
-    conObject: {
-      connectionString: process.env.POSTGRES_DATABASE_URL,
-      ssl: process.env.NODE_ENV === 'production',
-    },
-    tableName: 'session',
-    createTableIfMissing: true,
-  });
-
+  //const ConnectSession = ConnectPgSimple(session);
+//
+  //const sessionStore = new ConnectSession({
+  //  conObject: {
+  //    connectionString: process.env.POSTGRES_DATABASE_URL,
+  //    ssl: process.env.NODE_ENV === 'production',
+  //  },
+  //  tableName: 'session',
+  //  createTableIfMissing: true,
+  //});
+//
   return AdminJSExpress.buildAuthenticatedRouter(
     adminJs,
     {
@@ -36,7 +36,7 @@ export const expressAuthenticatedRouter = (adminJs: AdminJS) => {
     },
     null,
     {
-      store: sessionStore,
+      //store: sessionStore,
       resave: true,
       saveUninitialized: true,
       secret: process.env.SESSION_SECRET ?? 'sessionsecret',

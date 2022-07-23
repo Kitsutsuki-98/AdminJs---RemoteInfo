@@ -1,6 +1,6 @@
 import AdminJS from 'adminjs';
 import AdminJSMongoose from '@adminjs/mongoose';
-import AdminJSSequelize from '@adminjs/sequelize';
+//import AdminJSSequelize from '@adminjs/sequelize';
 //import { Database as MikroormDatabse, Resource as MikroormResource } from '@adminjs/mikroorm';
 //import { Database as TypeormDatabase, Resource as TypeormResource } from '@adminjs/typeorm';
 //import { Database as PrismaDatabase, Resource as PrismaResource } from '@adminjs/prisma';
@@ -32,7 +32,6 @@ import { DESIGN_SYSTEM_EXAMPLE_PAGE, SOME_STATS} from './components.bundler';
 //import { CryptoDatabase } from '../sources/rest/crypto-database';
 
 AdminJS.registerAdapter(AdminJSMongoose);
-AdminJS.registerAdapter(AdminJSSequelize);
 /* Per i database che non servono.
 AdminJS.registerAdapter({
   Database: TypeormDatabase,
@@ -50,7 +49,7 @@ AdminJS.registerAdapter({
 export const menu = {
   //rest: { name: 'REST', icon: 'Purchase' },
   mongoose: { name: 'RemoteInfo', icon: 'Tree' },
-  sequelize: { name: 'Sequelize Resources', icon: 'Sql' },
+ //sequelize: { name: 'Sequelize Resources', icon: 'Sql' },
  // typeorm: { name: 'Typeorm Resources', icon: 'NoodleBowl' },
  // mikroorm: { name: 'Mikroorm Resources', icon: 'Bee' },
  // prisma: { name: 'Prisma Resources', icon: 'Industry' },
