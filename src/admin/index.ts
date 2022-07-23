@@ -69,6 +69,9 @@ export const generateAdminJSConfig = () => ({
     logo: "http://localhost:3000/logo.jpg",
     favicon: "http://localhost:3000/favicon.png",
   },
+  dashboard: {
+    component: AdminJS.bundle('./new_dashboard') 
+  },
   version: {
     admin: true,
     app: '0.0.1 - pre-alpha',
