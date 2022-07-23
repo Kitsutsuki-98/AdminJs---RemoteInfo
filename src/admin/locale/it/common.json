@@ -18,7 +18,7 @@
   "logout": "Esci",
   "login": "Accedi",
   "seeTheDocumentation": "Vedi la documentazione",
-  "createFirstRecord": "Crea il primo record",
+  "createFirstRecord": "Crea il primo record"
 },
   "messages": {
     "loginWelcome": "Benvenuto su RemoteInfo, App basata su AdminJS, scritta con react",
@@ -37,7 +37,7 @@
   "properties": {
     "length": "Lunghezza",
     "from": "Da",
-    "to": "A",
+    "to": "A"
   },
   "resources": {},
   "messages": {
@@ -83,7 +83,8 @@
     "foundBug_subtitle": "Segnala il bug a adminjs su github",
     "needMoreSolutions_title":  "Hai bisogno di più soluzioni? Vuoi sganciare i sordi bastaddo?",
     "needMoreSolutions_subtitle": "Siamo qui per fare i soldi, come sempre, come tutti, SOLDI SOLDI SOLDI ",
-    "invalidCredentials": "Credenziali non valide"
+    "invalidCredentials": "Credenziali non valide",
+    "loginWelcome": "Esegui il login per visualizzare le tue risorse"
   }
 }
 

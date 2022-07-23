@@ -66,7 +66,8 @@ export const generateAdminJSConfig = () => ({
     companyName: 'Remote Info, pagina di demo',
     theme,
     withMadeWithLove: false,
-    logo: "http://localhost:3000/logo.jpg"
+    logo: "http://localhost:3000/logo.jpg",
+    favicon: "http://localhost:3000/favicon.png",
   },
   version: {
     admin: true,
