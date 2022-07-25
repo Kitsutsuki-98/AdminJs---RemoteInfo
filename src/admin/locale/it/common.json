@@ -10,15 +10,15 @@
 "buttons": {
   "save": "Salva",
   "addNewItem": "Aggiungi nuovo elemento",
-  "filter": "Filtra",
+  "filter": "Filtro",
   "applyChanges": "Applica modifiche",
   "resetFilter": "Resetta filtro",
-  "confirmRemovalMany": "Conferma la rimozione di  {{count}} record",
-  "confirmRemovalMany_plural": "Conferma la rimozione di  {{count}} records",
+  "confirmRemovalMany": "Conferma la rimozione di  {{count}} elementi",
+  "confirmRemovalMany_plural": "Conferma la rimozione di  {{count}} elementi",
   "logout": "Esci",
   "login": "Accedi",
   "seeTheDocumentation": "Vedi la documentazione",
-  "createFirstRecord": "Crea il primo record"
+  "createFirstRecord": "Crea il primo elemento"
 },
   "messages": {
     "loginWelcome": "Benvenuto su RemoteInfo, App basata su AdminJS, scritta con react",

@@ -2,7 +2,7 @@ import {model, Schema, Types} from 'mongoose';
 
 export interface Computer  {
     Hostname: String;
-    authors: Types.ObjectId[];
+    Utilizzatori: Types.ObjectId[];
     Sistema_Operativo: {
         Version: string;
         Patch: string;
@@ -40,7 +40,7 @@ export interface Computer  {
 }
 
 export const ComputerSchema = new Schema<Computer>({
-    authors: [{ type: Types.ObjectId, ref: 'User' }],
+    Utilizzatori: [{ type: Types.ObjectId, ref: 'User' }],
     Hostname:{ type: 'String', required: false },
     Sistema_Operativo: new Schema(
     {

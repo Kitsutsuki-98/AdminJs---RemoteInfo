@@ -5,8 +5,8 @@ import mongoose from 'mongoose';
 import {
   AdminModel,
   UserModel,
-  ArticleModel,
-  CommentModel,
+  //ArticleModel,
+  //CommentModel,
   CategoryModel,
   ComplicatedModel,
 } from '../sources/mongoose/models';
@@ -14,8 +14,8 @@ import {
 async function truncateMongodb() {
   await mongoose.connect(process.env.MONGO_DATABASE_URL);
   await UserModel.deleteMany({});
-  await ArticleModel.deleteMany({});
-  await CommentModel.deleteMany({});
+  //wait ArticleModel.deleteMany({});
+  //await CommentModel.deleteMany({});
   await CategoryModel.deleteMany({});
   await ComplicatedModel.deleteMany({});
   await AdminModel.deleteMany({

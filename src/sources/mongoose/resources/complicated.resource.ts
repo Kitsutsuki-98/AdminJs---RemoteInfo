@@ -13,5 +13,10 @@ export const CreateComplicatedResource = (): CreateResourceResult<typeof Complic
         isTitle: true,
       },
     },
+    actions: {
+      show: {
+        showInDrawer: true,
+      },
   },
+  }
 });

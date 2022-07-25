@@ -1,8 +1,16 @@
 .sidebar-brand span {
-  color: gray;
+  color: rgb(252, 3, 3);
 }
 
 h5.adminjs_Header > img::after {
+  background: red;
+  color: white;
+  content: 'Login: admin@example.com | Password: password';
+  height: 100px;
+  width: 300px;
+}
+
+h2.adminjs_Box > img::after {
   background: red;
   color: white;
   content: 'Login: admin@example.com | Password: password';

@@ -53,6 +53,7 @@ export const menu = {
  // typeorm: { name: 'Typeorm Resources', icon: 'NoodleBowl' },
  // mikroorm: { name: 'Mikroorm Resources', icon: 'Bee' },
  // prisma: { name: 'Prisma Resources', icon: 'Industry' },
+ //
 };
 
 export const generateAdminJSConfig = () => ({
