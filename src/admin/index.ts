@@ -30,7 +30,6 @@ import {
 //import { CreatePostResource, CreatePublisherResource, CreateProfileResource } from '../sources/prisma/resources';
 import { DESIGN_SYSTEM_EXAMPLE_PAGE, SOME_STATS} from './components.bundler';
 //import { CryptoDatabase } from '../sources/rest/crypto-database';
-
 AdminJS.registerAdapter(AdminJSMongoose);
 /* Per i database che non servono.
 AdminJS.registerAdapter({
@@ -71,7 +70,10 @@ export const generateAdminJSConfig = () => ({
     favicon: "http://localhost:3000/favicon.png",
   },
   dashboard: {
-    component: AdminJS.bundle('./new_dashboard') 
+    handler: async () => {
+
+    },
+    component: AdminJS.bundle('./my-dashboard-component')
   },
   version: {
     admin: true,
@@ -106,9 +108,12 @@ export const generateAdminJSConfig = () => ({
       component: DESIGN_SYSTEM_EXAMPLE_PAGE,
       icon: 'Workspace',
     },
+    "Custom dashboard": {
+      component: AdminJS.bundle('./new_dashboard'),
+      icon: "Tree"
+    },
   },
 });
-
 const ADMIN = {
   email: 'admin@example.com',
   password: 'password',
