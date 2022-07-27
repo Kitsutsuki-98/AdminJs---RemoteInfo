@@ -13,7 +13,7 @@ import {
   //CreateArticleResource,
   CreateCategoryResource,
   //CreateCommentResource,
-  //CreateComplicatedResource,
+  CreateComplicatedResource,
   CreateComputerResource,
   CreateUserResource,
 } from '../sources/mongoose/resources';
@@ -69,12 +69,6 @@ export const generateAdminJSConfig = () => ({
     logo: "http://localhost:3000/logo.jpg",
     favicon: "http://localhost:3000/favicon.png",
   },
-  dashboard: {
-    handler: async () => {
-
-    },
-    component: AdminJS.bundle('./my-dashboard-component')
-  },
   version: {
     admin: true,
     app: '0.0.1 - pre-alpha',
@@ -87,6 +81,7 @@ export const generateAdminJSConfig = () => ({
     CreateUserResource(),
     CreateCategoryResource(),
     CreateComputerResource(),
+    CreateComplicatedResource(),
     // // sequelize
     // CreateSequelizeCategoryResource(),
     // CreateProductResource(),

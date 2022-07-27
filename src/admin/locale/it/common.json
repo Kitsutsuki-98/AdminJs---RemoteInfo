@@ -32,7 +32,9 @@
     "adminVersion": "Admin: {{version}}",
     "appVersion": "RemoteInfo: {{version}}",
     "loginWelcome": "Benvenuto!",
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "users": "Utenti"
+    
   },
   "properties": {
     "length": "Lunghezza",

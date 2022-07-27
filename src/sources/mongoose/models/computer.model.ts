@@ -30,9 +30,9 @@ export interface Computer  {
         Patch: string;
     };
     Data: {
-        Data_Installazione: string;
-        Data_Ultima_Verifica: string;
-        Data_Ultima_Modifica: string;
+        Data_Installazione: Date;
+        Data_Ultima_Verifica: Date;
+        Data_Ultima_Modifica: Date;
     };
     Note: string;
     createdAt: Date;
@@ -78,9 +78,9 @@ export const ComputerSchema = new Schema<Computer>({
     { _id: false }
     ),
     Data: new Schema({
-        Data_Installazione: { type: 'String', required: false },
-        Data_Ultima_Verifica: { type: 'String', required: false },
-        Data_Ultima_Modifica: { type: 'String', required: false },
+        Data_Installazione: { type: 'Date', required: false },
+        Data_Ultima_Verifica: { type: 'Date', required: false },
+        Data_Ultima_Modifica: { type: 'Date', required: false },
     },
     { _id: false }
     ),

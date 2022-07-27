@@ -1,24 +1,41 @@
 import { model, Schema } from 'mongoose';
 
-export enum Gender {
-  Male = 'male',
-  Female = 'female',
+export enum Ruolo {
+  Amministrazione = 'Amministrazione',
+  Commerciale = 'Commerciale',
+  IT = 'IT',
+  Acquisti = 'Acquisti',
+  Vendite = 'Vendite',
+  CDQ = 'CDQ',
+  CEO = 'CEO',
+}
+export enum Reparto {
+  Amministrazione = 'Amministrazione',
+  Commerciale = 'Commerciale',
+  IT = 'IT',
+  Acquisti = 'Acquisti',
+  Vendite = 'Vendite',
+  CDQ = 'CDQ',
 }
 
 export interface User {
-  firstName: string;
+  Nome: string;
   lastName: string;
-  gender: Gender;
+  Cognome: string;
   email: string;
-  isMyFavourite: boolean;
+  èAttivo: boolean;
+  Ruolo: string;
+  Reparto: string;
 }
 
 export const UserSchema = new Schema<User>({
-  firstName: { type: 'String', required: true },
-  lastName: { type: 'String', required: true },
-  gender: { type: 'String', required: true, enum: Gender },
+  Nome: { type: 'String', required: true },
+  Cognome: { type: 'String', required: true },
+  Ruolo: { type: 'String', required: true, enum: Ruolo },
   email: { type: 'String', required: true },
-  isMyFavourite: { type: 'Boolean', required: true },
+  èAttivo: { type: 'Boolean', required: true },
+  Reparto: { type: 'String', required: true, enum: Reparto },
 });
 
 export const UserModel = model<User>('User', UserSchema);
+
