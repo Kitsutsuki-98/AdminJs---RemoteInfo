@@ -1,6 +1,6 @@
 ## AdminJS-Remote Info
 
-Example application using [adminjs](https://github.com/SoftwareBrothers/adminjs)
+Application using [adminjs](https://github.com/SoftwareBrothers/adminjs)
 
 This is a project that uses AdminJS to monitor and show the current state of your devices.
 
